@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Widget } from 'react-chat-widget';
+import { Widget, addResponseMessage } from 'react-chat-widget';
 
 import 'react-chat-widget/lib/styles.css';
 import './widget.css';
@@ -8,7 +8,8 @@ import './widget.css';
 class WidgetComponent extends Component {
     handleNewUserMessage = (newMessage) => {
         console.log(`New message incoming! ${newMessage}`);
-        // Now send the message throught the backend API
+
+        addResponseMessage('Accepted');
     }
 
     render () {
