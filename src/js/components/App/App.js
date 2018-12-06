@@ -9,9 +9,6 @@ class App extends Component {
             <div className="App container-fluid">
                 <div className='row full-height'>
                     <div className="col-6 full-height">
-                        <div className="jumbotron jumbotron-fluid">
-                            <h2 className="display-4">Main widget component</h2>
-                        </div>
                         <Widget />
                     </div>
                     <div className="col-6 full-height">

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Widget, addResponseMessage } from 'react-chat-widget';
+import {
+    Widget,
+    addResponseMessage,
+    addLinkSnippet
+} from 'react-chat-widget';
 
 import 'react-chat-widget/lib/styles.css';
 import './widget.css';
@@ -9,7 +13,12 @@ class WidgetComponent extends Component {
     handleNewUserMessage = (newMessage) => {
         console.log(`New message incoming! ${newMessage}`);
 
-        addResponseMessage('Accepted');
+        addResponseMessage('Link below');
+        addLinkSnippet({
+            title: 'My awesome link',
+            link: 'https://github.com/Wolox/react-chat-widget',
+            target: '_blank'
+        });
     }
 
     render () {
