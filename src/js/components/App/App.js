@@ -12,7 +12,7 @@ class App extends Component {
                         <Widget />
                     </div>
                     <div className="col-6 full-height">
-                        <div class="jumbotron jumbotron-fluid">
+                        <div className="jumbotron jumbotron-fluid">
                             <h2 className='display-4'>Some side bar</h2>
                         </div>
                     </div>
